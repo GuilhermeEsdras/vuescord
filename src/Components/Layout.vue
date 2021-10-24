@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 #grid {
-  display: grid; /* Essa div será organizado usando grid */
+  display: grid; /* O tipo de caixa dessa div será Grid */
   height: 100vh; /* Ocupa 100% da altura disponível */
   grid-template-columns: 71px 240px auto 240px; /* Grid terá 4 colunas */
   grid-template-rows: 46px auto 52px; /* Grid terá 3 linhas */
