@@ -23,7 +23,11 @@ export default {
    */
   grid-area: SN; /* Diz que a grid-area que essa div filha irá ocupar é a de sigla SN (ServerName) */
 
+  /**
+   * .:: Cor e estilo ::.
+   */
   background-color: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.9) 0 1px 0 0; /* cor + deslocamentos */
 
   /**
    * .:: Alinhamento ::.
@@ -37,7 +41,6 @@ export default {
    */
   padding: 0 11px 0 16px; /* 0 em cima | 11 na direita | 0 em baixo | 16 na esquerda */
 
-  box-shadow: rgba(0, 0, 0, 0.9) 0 1px 0 0; /* cor + deslocamentos */
   z-index: 2; /* Ficar acima dos outros componentes pra sombra dele se sobressair */
 }
 
