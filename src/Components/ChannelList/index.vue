@@ -4,7 +4,7 @@
       div Canais de Texto
       .category-icon
         AddCategoryIcon(:size="21")
-    ChannelButton(channelName="chat-livre")
+    ChannelButton(channelName="chat-livre" selected)
     ChannelButton(channelName="trabalho")
     ChannelButton(channelName="lolzinho")
     ChannelButton(channelName="valorant")

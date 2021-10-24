@@ -1,5 +1,5 @@
 <template lang="pug">
-  .channel-list
+  .channel-list(:class="{ active: selected }")
     .channel-info
       HashTagIcon.hash-icon(:size="20")
       div {{channelName}}
@@ -19,7 +19,8 @@ export default {
     SettingsIcon
   },
   props: {
-    channelName: String
+    channelName: String,
+    selected: Boolean
   }
 }
 </script>
@@ -61,6 +62,10 @@ export default {
     .icon-actions {
       color: var(--symbol);
       margin-left: 4px;
+      transition: 0.2s;
+      &:hover {
+        color: var(--white);
+      }
     }
   }
 
