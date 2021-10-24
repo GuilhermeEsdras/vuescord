@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import AddCategoryIcon from 'vue-material-design-icons/Plus'
-import ChannelButton from './ChannelButton'
+import AddCategoryIcon from "vue-material-design-icons/Plus";
+import ChannelButton from "./ChannelButton";
 export default {
   components: {
     AddCategoryIcon,
     ChannelButton
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -3,20 +3,23 @@
     ServerList
     ServerName
     ChannelList
+    UserInfo
 </template>
 
 <script>
-import ServerList from './ServerList'
-import ServerName from './ServerName'
-import ChannelList from './ChannelList'
+import ServerList from "./ServerList";
+import ServerName from "./ServerName";
+import ChannelList from "./ChannelList";
+import UserInfo from "./UserInfo";
 
 export default {
   components: {
     ServerList,
     ServerName,
-    ChannelList
+    ChannelList,
+    UserInfo
   }
-}
+};
 </script>
 
 <style scoped>
@@ -41,10 +44,9 @@ export default {
    * UL = User List (ocupará as duas últimas linhas da última coluna)
    * UI = User Info (ocupará a última linha da segunda coluna)
    */
-  grid-template-areas: 
+  grid-template-areas:
     "SL SN CI CI"
     "SL CL CD UL"
-    "SL UI CD UL"
-  ;
+    "SL UI CD UL";
 }
 </style>

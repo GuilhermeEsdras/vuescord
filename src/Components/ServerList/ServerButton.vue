@@ -12,7 +12,7 @@ export default {
     hasNotification: Boolean,
     mentions: Number
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -102,7 +102,7 @@ export default {
   color: var(--white);
   font-weight: bold;
   text-align: center;
-  
+
   /**
    * .:: Tratando das bordas, arredondando e colocando espaçamento correto ::.
    */

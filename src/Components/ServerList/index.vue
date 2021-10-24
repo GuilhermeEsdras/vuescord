@@ -15,21 +15,21 @@
     ServerButton
 </template>
 
-
 <script>
-import ServerButton from './ServerButton'
+import ServerButton from "./ServerButton";
 
 export default {
   components: {
     ServerButton
   }
-}
+};
 </script>
-
 
 <style scoped lang="scss">
 .container {
-  background-color: var(--tertiary); /* Usa a variável global da cor terciária */
+  background-color: var(
+    --tertiary
+  ); /* Usa a variável global da cor terciária */
 
   /**
    * .:: Posicionamento ::.
@@ -49,7 +49,7 @@ export default {
    * As grid-area's são definidas na div mãe no atributo "grid-template-areas"
    */
   grid-area: SL; /* Diz que a grid-area que essa div filha irá ocupar é a de sigla SL (ServerList) */
-  
+
   max-height: 100vh; /* Altura máxima = 100% da altura disponível */
 
   /**

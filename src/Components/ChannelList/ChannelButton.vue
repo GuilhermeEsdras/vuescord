@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import HashTagIcon from 'vue-material-design-icons/Pound'
-import InviteIcon from 'vue-material-design-icons/AccountPlus'
-import SettingsIcon from 'vue-material-design-icons/CogOutline'
+import HashTagIcon from "vue-material-design-icons/Pound";
+import InviteIcon from "vue-material-design-icons/AccountPlus";
+import SettingsIcon from "vue-material-design-icons/CogOutline";
 export default {
   components: {
     HashTagIcon,
@@ -22,7 +22,7 @@ export default {
     channelName: String,
     selected: Boolean
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
