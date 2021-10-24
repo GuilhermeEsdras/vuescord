@@ -26,7 +26,7 @@ export default {
   background-color: var(--secondary);
 
   /**
-   * .:: Alinhamento e Posicionamento ::.
+   * .:: Alinhamento ::.
    */
   display: flex;
   align-items: center;

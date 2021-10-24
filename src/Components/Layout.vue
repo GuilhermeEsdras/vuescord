@@ -2,26 +2,29 @@
   #grid
     ServerList
     ServerName
+    ChannelList
 </template>
 
 <script>
 import ServerList from './ServerList'
 import ServerName from './ServerName'
+import ChannelList from './ChannelList'
 
 export default {
   components: {
     ServerList,
-    ServerName
+    ServerName,
+    ChannelList
   }
 }
 </script>
 
 <style scoped>
 #grid {
-  display: grid; /* O tipo de caixa dessa div será Grid */
+  display: grid; /* O tipo de caixa dessa div será Grid, por isso, seus filhos terão grid-area's */
   height: 100vh; /* Ocupa 100% da altura disponível */
-  grid-template-columns: 71px 240px auto 240px; /* Grid terá 4 colunas */
-  grid-template-rows: 46px auto 52px; /* Grid terá 3 linhas */
+  grid-template-columns: 71px 240px auto 240px; /* O Grid terá 4 colunas, cada coluna com esses respectivos tamanhos */
+  grid-template-rows: 46px auto 52px; /* O Grid terá 3 linhas, cada linha com esses respectivos tamanhos */
 
   /**
    * .:: Aqui fica a organização dos espaços do Grid ::.
