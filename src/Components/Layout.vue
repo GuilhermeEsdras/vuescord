@@ -5,6 +5,7 @@
     ChannelList
     UserInfo
     ChannelInfo
+    ChannelData
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import ServerName from "./ServerName";
 import ChannelList from "./ChannelList";
 import UserInfo from "./UserInfo";
 import ChannelInfo from "./ChannelInfo";
+import ChannelData from "./ChannelData";
 
 export default {
   components: {
@@ -20,7 +22,8 @@ export default {
     ServerName,
     ChannelList,
     UserInfo,
-    ChannelInfo
+    ChannelInfo,
+    ChannelData
   }
 };
 </script>
@@ -43,7 +46,7 @@ export default {
    * SN = Server Name (ocupará apenas a primeira linha da segunda coluna)
    * CI = Channel Info (ocupará as duas últimas colunas da primeira linha)
    * CL = Channel List (ocupará a linha do meio da segunda coluna)
-   * CD = Channel Date (ocupará as duas últimas linhas da terceira coluna)
+   * CD = Channel Data (ocupará as duas últimas linhas da terceira coluna)
    * UL = User List (ocupará as duas últimas linhas da última coluna)
    * UI = User Info (ocupará a última linha da segunda coluna)
    */
