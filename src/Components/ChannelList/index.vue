@@ -31,18 +31,27 @@ export default {
    */
   grid-area: CL; /* Diz que a grid-area que essa div filha irá ocupar é a de sigla CL (ChannelList) */
 
+  /**
+   * .:: Cor e Estilo ::.
+   */
   background-color: var(--secondary);
 
   /**
-   * .:: Alinhamento e Posicionamento ::.
+   * .:: Alinhamento ::.
    */
   display: flex;
   flex-direction: column;
 
+  /**
+   * .:: Posicionamento ::.
+   */
   padding: 24px 10px 0 16px;
 }
 
 .category {
+  /**
+   * .:: Cor e Estilo ::.
+   */
   color: var(--grey);
 
   /**

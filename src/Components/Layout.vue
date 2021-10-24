@@ -4,6 +4,7 @@
     ServerName
     ChannelList
     UserInfo
+    ChannelInfo
 </template>
 
 <script>
@@ -11,13 +12,15 @@ import ServerList from "./ServerList";
 import ServerName from "./ServerName";
 import ChannelList from "./ChannelList";
 import UserInfo from "./UserInfo";
+import ChannelInfo from "./ChannelInfo";
 
 export default {
   components: {
     ServerList,
     ServerName,
     ChannelList,
-    UserInfo
+    UserInfo,
+    ChannelInfo
   }
 };
 </script>
