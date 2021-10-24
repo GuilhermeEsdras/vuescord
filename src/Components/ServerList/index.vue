@@ -1,14 +1,20 @@
-<template>
-  <div class="container">
-    <ServerButton isHome />
-    <div class="separator"></div>
-    <ServerButton :mentions="3" /> <!-- VueJS: Se a propriedade for número, coloca ":" no início -->
-    <ServerButton hasNotification />
-    <ServerButton :mentions="32" hasNotification />
-    <ServerButton v-for="servers in 18" :key="servers.id" />
-    <ServerButton />
-  </div>
+<template lang="pug">
+  .container
+    ServerButton(isHome)
+    .separator
+    ServerButton(:mentions="3")
+    ServerButton(hasNotification)
+    ServerButton(
+      hasNotification
+      :mentions="32"
+    )
+    ServerButton(
+      v-for="servers in 18" 
+      :key="servers.id"
+    )
+    ServerButton
 </template>
+
 
 <script>
 import ServerButton from './ServerButton'

@@ -1,15 +1,13 @@
-<template>
-  <div class="serverbutton" :class="{'serverbutton-isHome': isHome, 'serverbutton-hasNotification': hasNotification}"> <!-- VueJS: Só executa se a lógica dentro dos '{}' for verdadeira -->
-  <img src="../../assets/discord.svg" v-if="isHome"> <!-- VueJS: v-if = visibilidade condicional -->
-  <div class="mentions" v-if="mentions">{{mentions}}</div>
-  </div>
+<template lang="pug">
+  .serverbutton(:class="{'serverbutton-isHome': isHome, 'serverbutton-hasNotification': hasNotification}")
+    img(src='../../assets/discord.svg' v-if='isHome')
+    .mentions(v-if='mentions') {{mentions}}
 </template>
 
 <script>
 export default {
   props: {
     selected: Boolean,
-
     isHome: Boolean,
     hasNotification: Boolean,
     mentions: Number

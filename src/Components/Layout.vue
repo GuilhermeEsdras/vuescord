@@ -1,15 +1,17 @@
-<template>
-  <div id="grid">
-    <ServerList />
-  </div>
+<template lang="pug">
+  #grid
+    ServerList
+    ServerName
 </template>
 
 <script>
 import ServerList from './ServerList'
+import ServerName from './ServerName'
 
 export default {
   components: {
-    ServerList
+    ServerList,
+    ServerName
   }
 }
 </script>
