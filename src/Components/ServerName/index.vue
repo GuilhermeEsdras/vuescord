@@ -46,4 +46,9 @@ export default {
   font-size: 16px;
   font-weight: bold;
 }
+
+.icon {
+  color: var(--white);
+  cursor: pointer;
+}
 </style>
