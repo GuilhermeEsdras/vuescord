@@ -5,7 +5,7 @@
     <ServerButton :mentions="3" /> <!-- VueJS: Se a propriedade for número, coloca ":" no início -->
     <ServerButton hasNotification />
     <ServerButton :mentions="32" hasNotification />
-    <ServerButton />
+    <ServerButton v-for="servers in 18" :key="servers.id" />
     <ServerButton />
   </div>
 </template>
@@ -39,6 +39,11 @@ export default {
    * As grid-area's são definidas na div mãe no atributo "grid-template-areas"
    */
   grid-area: SL; /* Diz que a grid-area que essa div filha irá ocupar é a de sigla SL (ServerList) */
+
+  overflow-y: scroll; /* Cria uma barra de rolagem caso o número de botões ultrapasse a view disponível */
+  &::-webkit-scrollbar {
+    display: none; /* Deixa a barra transparente */
+  }
 }
 
 .separator {
