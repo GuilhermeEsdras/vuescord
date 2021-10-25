@@ -11,7 +11,11 @@
 </template>
 
 <script>
+import BotBadge from '../Global/BotBadge'
 export default {
+  components: {
+    BotBadge
+  },
   props: {
     author: String,
     date: String,
@@ -75,9 +79,6 @@ export default {
       .bot-badge {
         background-color: var(--discord);
         color: var(--white);
-  
-        position: relative;
-        top: -4px;
         
         margin-left: 9px; /* Distância do badge pro nome do usuário */
         padding: 3px 5px;
@@ -86,6 +87,9 @@ export default {
         text-transform: uppercase;
         font-size: 10px;
         font-weight: bold;
+  
+        position: relative;
+        top: -4px;
       }
   
       .date {

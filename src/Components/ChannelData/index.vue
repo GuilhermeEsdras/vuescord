@@ -79,6 +79,7 @@ Vue.component("Mention", {
     }
   }
 
+  // Caixa de texto de mensagens:
   .input-wrapper {
     width: 100%;
     height: 68px;
@@ -101,6 +102,7 @@ Vue.component("Mention", {
       }
     }
 
+    // @
     .icon {
       color: var(--grey);
 
