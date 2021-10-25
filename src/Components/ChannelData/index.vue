@@ -1,7 +1,10 @@
 <template lang="pug">
   .container
     .messages
-      Message(v-for="msg in 50" :key="msg.id")
+      ChannelMessage(author="Guilherme Esdras" date="21/11/2021" v-for="msg in 40" :key="msg.id") Isso é uma mensagem.
+      ChannelMessage(author="Esdras Guilherme" date="21/11/2021" isBot hasMention)
+        Mention @Guilherme Esdras
+        | , isso é uma menção
     .input-wrapper
       input(type="text" placeholder="Conversar em #chat-livre")
       .icon
@@ -9,14 +12,19 @@
 </template>
 
 <script>
-import Message from "./Message";
+import Vue from "vue";
+import ChannelMessage from "./ChannelMessage";
 import At from "vue-material-design-icons/At";
 export default {
   components: {
-    Message,
+    ChannelMessage,
     At
   }
 };
+
+Vue.component("Mention", {
+  template: '<span class="mention"><slot /></span>'
+});
 </script>
 
 <style lang="scss" scoped>
@@ -45,7 +53,7 @@ export default {
     height: calc(100vh - 46px - 68px);
     max-height: calc(100vh - 46px - 68px);
 
-    overflow-y: scroll; /* Se houverem mais elementos do que o max-height cabe, coloca a scrollbar */
+    overflow-y: scroll; /* Cria uma barra de rolagem caso o número de mensagens ultrapasse a view disponível */
 
     /**
      * .:: Estilizando a Scrollbar (barra de rolagem) ::.
@@ -62,6 +70,12 @@ export default {
       /* Área externa */
       background-color: var(--secondary);
       border-radius: 4px;
+    }
+
+    // Classe do componente ChannelMessage
+    .channel-message:first-child {
+      /* Remove o margin top da primeira mensagem do canal */
+      margin-top: 0;
     }
   }
 
