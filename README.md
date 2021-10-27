@@ -1,6 +1,6 @@
 # vuescord
 
-> A Simple Discord Interface Clone made with VueJS, SASS & PUG (HTML Pre-processor)
+> A Simple Discord Interface Clone made with Vue.js, SASS & PUG (HTML Pre-processor)
 
 ## Build Setup
 
